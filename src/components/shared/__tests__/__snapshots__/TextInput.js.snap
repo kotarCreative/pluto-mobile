@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with defaults 1`] = `
+<TextInput
+  allowFontScaling={true}
+  editable={true}
+  placeholder="test"
+  placeholderTextColor="#F5FCFF"
+  selectionColor="#F5FCFF"
+  style={
+    Object {
+      "color": "#FFFFFF",
+      "padding": 5,
+    }
+  }
+  underlineColorAndroid="transparent"
+/>
+`;

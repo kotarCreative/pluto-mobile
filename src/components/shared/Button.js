@@ -5,8 +5,7 @@
  * @flow
  */
 
-import React from 'react'
-import { PureComponent } from 'react'
+import React, { PureComponent } from 'react'
 import { StyleSheet, Text, TouchableHighlight } from 'react-native'
 import COLOR from '@/constants/colors'
 
