@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
     borderWidth: 0
   },
   text: {
-    color: COLOR.BLACK
+    color: COLOR.BLACK,
+    textAlign: 'center'
   },
   enabledText: {
     color: COLOR.WHITE
