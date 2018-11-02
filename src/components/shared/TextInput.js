@@ -13,7 +13,9 @@ import COLOR from '@/constants/colors'
 const styles = StyleSheet.create({
   input: {
     color: COLOR.WHITE,
-    padding: 5
+    padding: 5,
+    textAlign: 'center',
+    fontSize: 18
   }
 })
 
