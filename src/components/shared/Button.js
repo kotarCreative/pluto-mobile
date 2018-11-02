@@ -5,9 +5,9 @@
  * @flow
  */
 
-import React from 'react';
-import { PureComponent } from 'react';
-import { StyleSheet, Text, TouchableHighlight } from 'react-native';
+import React from 'react'
+import { PureComponent } from 'react'
+import { StyleSheet, Text, TouchableHighlight } from 'react-native'
 import COLOR from '@/constants/colors'
 
 // styles
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   enabledText: {
     color: COLOR.WHITE
   }
-});
+})
 
 export class Button extends PureComponent<Props, State> {
   render() {
@@ -40,6 +40,6 @@ export class Button extends PureComponent<Props, State> {
       >
         <Text style={{ ...styles.text, ...!this.props.disabled ? styles.enabledText : {}}}>{this.props.title}</Text>
       </TouchableHighlight>
-    );
+    )
   }
 }
