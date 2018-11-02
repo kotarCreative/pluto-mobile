@@ -1,0 +1,16 @@
+
+export const BLACK = '#000';
+export const BRAND_PRIMARY = '#665C90';
+export const BRAND_PRIMARY_HIGHLIGHT = '#665C90';
+export const BRAND_SECONDARY = '#E38C3B';
+export const BRAND_SECONDARY_HIGHLIGHT = '#E38C3B';
+export const WHITE = '#FFFFFF';
+
+export default {
+  BLACK,
+  BRAND_PRIMARY,
+  BRAND_PRIMARY_HIGHLIGHT,
+  BRAND_SECONDARY,
+  BRAND_SECONDARY_HIGHLIGHT,
+  WHITE
+}

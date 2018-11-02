@@ -6,12 +6,13 @@
  * @flow
  */
 
-import React, {PureComponent} from 'react';
-import {Provider} from 'react-redux';
+import React, { PureComponent } from 'react';
+import { Provider } from 'react-redux';
 import './config'
 import './bootstrap'
 
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import { Platform, StyleSheet, Text, View } from 'react-native';
+import { Button } from '@/components/shared/Button';
 
 import store from '@/store'
 
@@ -20,6 +21,7 @@ export default class App extends PureComponent {
     return (
       <Provider store={store}>
         <View style={styles.container}>
+          <Button title="hello World" onPress={() =>  "Clicked"} disabled={true}/>
           <Text style={styles.welcome}>Welcome to React Native!</Text>
           <Text style={styles.instructions}>To get started, edit App.js</Text>
         </View>
