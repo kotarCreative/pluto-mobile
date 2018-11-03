@@ -82,7 +82,7 @@ export class Login extends PureComponent {
           <TouchableHighlight
             onPress={() => {}}
             style={styles.forgotPwBtn}
-            underlayColor={BRAND_SECONDARY_HIGHLIGHT}
+            underlayColor={'transparent'}
           >
             <Text style={styles.forgotPwTxt}>Forgot your password?</Text>
           </TouchableHighlight>
