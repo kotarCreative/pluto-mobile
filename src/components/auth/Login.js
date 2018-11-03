@@ -6,7 +6,7 @@
  */
 
 import React, { PureComponent } from 'react'
-import { StyleSheet, Text, TouchableHighlight, View } from 'react-native'
+import { Image, StyleSheet, Text, TouchableHighlight, View } from 'react-native'
 
 // Components
 import { Button } from '@/components/shared/Button';
@@ -15,6 +15,7 @@ import { TextInput } from '@/components/shared/TextInput';
 import { ViewWithBg } from '@/components/shared/ViewWithBg';
 
 import { BRAND_SECONDARY_HIGHLIGHT, WHITE } from '@/constants/colors';
+import logo from '@/assets/logos/wordmark.png'
 
 // Styles
 const styles = StyleSheet.create({
@@ -48,6 +49,10 @@ const styles = StyleSheet.create({
     marginTop: 30,
     width: '100%'
   },
+  logo: {
+    alignSelf: 'center',
+    marginBottom: 60
+  }
 })
 
 export class Login extends PureComponent {
@@ -55,6 +60,7 @@ export class Login extends PureComponent {
     return (
       <ViewWithBg>
         <View style={styles.centeredContainer}>
+          <Image style={styles.logo} source={logo} />
           <FormLayout>
             <TextInput placeholder="Email"
                        onChangeText={text => {}}
