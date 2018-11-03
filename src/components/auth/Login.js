@@ -7,21 +7,23 @@
 
 import React, { PureComponent } from 'react'
 import { Image, StyleSheet, Text, TouchableHighlight, View } from 'react-native'
+import { getBottomSpace } from 'react-native-iphone-x-helper'
 
 // Components
-import { Button } from '@/components/shared/Button';
-import { FormLayout } from '@/components/shared/FormLayout';
-import { TextInput } from '@/components/shared/TextInput';
-import { ViewWithBg } from '@/components/shared/ViewWithBg';
+import { Button } from '@/components/shared/Button'
+import { FormLayout } from '@/components/shared/FormLayout'
+import { TextInput } from '@/components/shared/TextInput'
+import { ViewWithBg } from '@/components/shared/ViewWithBg'
 
-import { BRAND_SECONDARY_HIGHLIGHT, WHITE } from '@/constants/colors';
+import { BRAND_SECONDARY_HIGHLIGHT, WHITE } from '@/constants/colors'
 import logo from '@/assets/logos/wordmark.png'
 
 // Styles
 const styles = StyleSheet.create({
   accountBtn: {
     backgroundColor: BRAND_SECONDARY_HIGHLIGHT,
-    padding: 10
+    padding: 10,
+    paddingBottom: getBottomSpace() - 10
   },
   accountBtnTxt: {
     textAlign: 'center',
@@ -35,7 +37,7 @@ const styles = StyleSheet.create({
     right: 0,
     left: 0,
     position: 'absolute',
-    bottom: 0,
+    bottom: 0
   },
   forgotPwBtn: {
     padding: 15
