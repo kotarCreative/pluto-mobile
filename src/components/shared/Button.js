@@ -35,7 +35,7 @@ export class Button extends PureComponent<Props, State> {
     return (
       <TouchableHighlight
         onPress={this.props.onPress}
-        style={{ ...styles.button, ...!this.props.disabled ? styles.enabledButton : {}}}
+        style={{ ...styles.button, ...!this.props.disabled ? styles.enabledButton : {}, ...this.props.style}}
         underlayColor={COLOR.BRAND_SECONDARY_HIGHLIGHT}
       >
         <Text style={{ ...styles.text, ...!this.props.disabled ? styles.enabledText : {}}}>{this.props.title}</Text>

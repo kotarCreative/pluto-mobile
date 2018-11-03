@@ -46,7 +46,7 @@ export class FormLayout extends PureComponent<Props, State> {
         </View>
       )
     }
-    output.push(<View style={styles.footer}>{fields[i]}</View>)
+    output.push(<View style={styles.footer} key={'form_' + i}>{fields[i]}</View>)
     return output
   }
 }
