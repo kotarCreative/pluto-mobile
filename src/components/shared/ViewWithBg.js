@@ -6,7 +6,7 @@
  */
 import React, { PureComponent } from 'react'
 import { Image, StyleSheet, View } from 'react-native'
-import mainBg from '@/assets/images/sky-bg.png' //eslint-disable-line
+import mainBg from '@/assets/images/sky-bg@2x.png' //eslint-disable-line
 
 // style
 const styles = StyleSheet.create({

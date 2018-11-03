@@ -1,4 +1,3 @@
-// components/__tests__/Hello.tsx
 import React from 'react'
 import renderer from 'react-test-renderer'
 

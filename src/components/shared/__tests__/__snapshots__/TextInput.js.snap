@@ -10,7 +10,9 @@ exports[`renders correctly with defaults 1`] = `
   style={
     Object {
       "color": "#FFFFFF",
+      "fontSize": 18,
       "padding": 5,
+      "textAlign": "center",
     }
   }
   underlineColorAndroid="transparent"

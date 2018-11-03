@@ -24,6 +24,7 @@ exports[`renders correctly with defaults 1`] = `
     style={
       Object {
         "color": "#FFFFFF",
+        "textAlign": "center",
       }
     }
   >
