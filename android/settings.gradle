@@ -1,3 +1,3 @@
-rootProject.name = 'PlutoApp'
+rootProject.name = 'Pluto'
 
 include ':app'

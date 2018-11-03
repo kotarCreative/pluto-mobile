@@ -1,4 +1,4 @@
-package com.plutoapp;
+package com.pluto;
 
 import android.app.Application;
 
