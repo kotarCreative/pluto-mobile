@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   }
 })
 
-export class ViewWithBg extends PureComponent<Props, State> {
+export class ViewWithBg extends PureComponent {
   render() {
     return (
       <View

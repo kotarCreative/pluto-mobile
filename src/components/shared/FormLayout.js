@@ -7,7 +7,9 @@
 
 import React, { PureComponent } from 'react'
 import { StyleSheet, View } from 'react-native'
+
 import COLOR from '@/constants/colors'
+import { TextInput } from '@/components/shared/TextInput'
 
 // styles
 const styles = StyleSheet.create({
@@ -27,7 +29,11 @@ const styles = StyleSheet.create({
   }
 })
 
-export class FormLayout extends PureComponent<Props, State> {
+type Props = {
+  children: React.ChildrenArray<React.Element<typeof TextInput>>
+}
+
+export class FormLayout extends PureComponent<Props> {
   render() {
     return (
       <View style={styles.form}>

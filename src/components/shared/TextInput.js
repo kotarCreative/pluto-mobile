@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   }
 })
 
-export class TextInput extends PureComponent<Props, State> {
+export class TextInput extends PureComponent {
   render() {
     return (
       <DefaultInput

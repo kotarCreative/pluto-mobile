@@ -36,7 +36,19 @@ const styles = StyleSheet.create({
   }
 })
 
-export class Button extends PureComponent<Props, State> {
+type Props = {
+    onPress: func,
+    disabled?: boolean,
+    secondary?: boolean,
+    title: string
+}
+
+export class Button extends PureComponent<Props> {
+  static defaultProps = {
+    disabled: false,
+    secondary: false
+  }
+
   render() {
     return (
       <TouchableHighlight
