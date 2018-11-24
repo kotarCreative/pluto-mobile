@@ -1,5 +1,5 @@
 /**
- * Standard button component
+ * Form scaffolding
  *
  * @format
  * @flow

@@ -1,5 +1,5 @@
 /**
- * Login screen
+ * Sign up screen
  *
  * @format
  * @flow
@@ -26,10 +26,6 @@ const styles = StyleSheet.create({
     padding: 10,
     paddingBottom: getBottomSpace() - 10
   },
-  accountBtnTxt: {
-    textAlign: 'center',
-    color: WHITE
-  },
   centeredContainer: {
     alignSelf: 'center',
     width: 200
@@ -40,25 +36,21 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 0
   },
-  forgotPwBtn: {
-    padding: 15
-  },
-  forgotPwTxt: {
-    color: WHITE,
-    textAlign: 'center',
-    fontSize: 12,
-  },
-  loginButton: {
-    marginTop: 30,
-    width: '100%'
-  },
   logo: {
     alignSelf: 'center',
     marginBottom: 60
+  },
+  loginBtnTxt: {
+    textAlign: 'center',
+    color: WHITE
+  },
+  signUpButton: {
+    marginTop: 30,
+    width: '100%'
   }
 })
 
-export class Login extends PureComponent {
+export class SignUp extends PureComponent {
   render() {
     return (
       <ViewWithBg>
@@ -73,9 +65,14 @@ export class Login extends PureComponent {
                        secureTextEntry
                        onChangeText={text => {}}
                        />
+             <TextInput placeholder="Confirm Password"
+                        textContentType="password"
+                        secureTextEntry
+                        onChangeText={text => {}}
+                        />
           </FormLayout>
-          <Button title="Blast Off"
-                  style={styles.loginButton}
+          <Button title="Sign Me Up"
+                  style={styles.signUpButton}
                   onPress={() =>  "Clicked"}
                   disabled={true}
                   secondary={true}
@@ -83,18 +80,11 @@ export class Login extends PureComponent {
         </View>
         <View style={styles.footer}>
           <TouchableHighlight
-            onPress={() => {}}
-            style={styles.forgotPwBtn}
-            underlayColor={'transparent'}
-          >
-            <Text style={styles.forgotPwTxt}>Forgot your password?</Text>
-          </TouchableHighlight>
-          <TouchableHighlight
-            onPress={() => Actions.signup()}
+            onPress={() => Actions.pop()}
             style={styles.accountBtn}
             underlayColor={BRAND_SECONDARY_HIGHLIGHT}
           >
-            <Text style={styles.accountBtnTxt}>Don't have an account?</Text>
+            <Text style={styles.loginBtnTxt}>Already have an account?</Text>
           </TouchableHighlight>
         </View>
       </ViewWithBg>
