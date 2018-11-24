@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with defaults 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "bottom": 0,
+        "flex": 1,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <Image
+      source={1}
+      style={
+        Object {
+          "height": "100%",
+          "resizeMode": "cover",
+          "width": "100%",
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+        "padding": 0,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignSelf": "center",
+          "width": 200,
+        }
+      }
+    >
+      <Image
+        source={1}
+        style={
+          Object {
+            "alignSelf": "center",
+            "marginBottom": 60,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "width": 200,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "borderBottomColor": "#FFFFFF",
+              "borderBottomWidth": 1,
+              "padding": 10,
+            }
+          }
+        >
+          <TextInput
+            allowFontScaling={true}
+            editable={true}
+            onChangeText={[Function]}
+            placeholder="Email"
+            placeholderTextColor="#F5FCFF"
+            selectionColor="#F5FCFF"
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 18,
+                "padding": 5,
+                "textAlign": "center",
+              }
+            }
+            underlineColorAndroid="transparent"
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "padding": 10,
+            }
+          }
+        >
+          <TextInput
+            allowFontScaling={true}
+            editable={true}
+            onChangeText={[Function]}
+            placeholder="Password"
+            placeholderTextColor="#F5FCFF"
+            secureTextEntry={true}
+            selectionColor="#F5FCFF"
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 18,
+                "padding": 5,
+                "textAlign": "center",
+              }
+            }
+            textContentType="password"
+            underlineColorAndroid="transparent"
+          />
+        </View>
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "borderColor": "#FFFFFF",
+            "borderRadius": 5,
+            "borderWidth": 1,
+            "marginTop": 30,
+            "padding": 5,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "textAlign": "center",
+            }
+          }
+        >
+          Blast Off
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "padding": 15,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 12,
+              "textAlign": "center",
+            }
+          }
+        >
+          Forgot your password?
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#E38C3B",
+            "padding": 10,
+            "paddingBottom": -10,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "textAlign": "center",
+            }
+          }
+        >
+          Don't have an account?
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

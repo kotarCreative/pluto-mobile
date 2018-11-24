@@ -41,6 +41,16 @@
     "preset": "react-native",
     "transform": {
       "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
-    }
+    },
+    "moduleNameMapper": {
+      "^[@./a-zA-Z0-9$_-]+\\.(png|gif)$": "RelativeImageStub"
+    },
+    "setupFiles": [
+      "<rootDir>/jestConfig/setup.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/ios/Pods/"
+    ]
   }
 }

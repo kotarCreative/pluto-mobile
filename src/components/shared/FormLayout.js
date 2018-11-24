@@ -45,7 +45,8 @@ export class FormLayout extends PureComponent<Props> {
   renderChildren() {
     const fields = this.props.children
     let output = []
-    for (i = 0; i < fields.length - 1; i++) {
+    let i = 0
+    for (i; i < fields.length - 1; i++) {
       output.push(
         <View style={styles.separator} key={'form_' + i}>
           {fields[i]}
